@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.393), rgba(0, 0, 0, 0.799)) , 
+    url('../img/candle1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    background-color: #685c4b80;
+    border: 2px solid #b69b88;
+    color: #b69b88;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.intro-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    background-color: #685c4b;
+    color: rgb(205, 205, 177);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: -2rem;
+    clip-path: polygon(26% 6%, 50% 0, 75% 6%, 100% 0, 100% 100%, 48% 100%, 0 100%, 0 51%, 0 0);
+}
+
+.intro-text__textbox h3 {
+    color: beige;
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.text-solid p {
+    color: solid rgb(205, 205, 177);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/candle2.webp');
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text a {
+    background-color: #696566a3;
+    border: 2px solid #e2e1e0;
+    color: #e2e1e0;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.packaging-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.packaging-text {
+    background-color: #696566a3;
+    color: #575153;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+
+.packaging_text__textbox h3 {
+    color: #665f61;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.393), rgba(0, 0, 0, 0.799)) , 
+    url('../img/candle3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text a {
+    background-color: #eecb9d48;
+    border: 2px solid #c8c2bb;
+    color:  #c8c2bb;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.tutorials-image__text a:hover {
+    transform: scale(1.3);
+}
+
+.footer {
+    color: rgb(141, 139, 116);
+    font-size: 2rem;
+    height: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(141, 129, 116);
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgb(60, 42, 29);
+    transform: scale(1.2);
+}
